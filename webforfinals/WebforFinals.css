@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    background-image: url("bghome.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 14px black;
+  }
+   
+  .logo{
+    color: rgb(168, 16, 16);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  }
+  
+  .navbar .logo .h1{
+    border-bottom: 4px solid green;
+  }
+  
+  .navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    color:#000000;
+  }
+  
+  .navbar .menu li a{
+    display: block;
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .pHeading{
+    text-align: center;
+    margin: 50px 0;
+    color: rgb(168, 16, 16);
+    font-size: 40;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .sec{
+    padding: 10px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+  }
+
+
+  .products .card{
+    width: 200px;
+    background: white;
+    border-radius: 10px;
+    padding: 3x;
+    margin-bottom: 45px;
+  }
+
+  .products .card:hover{
+    box-shadow: 0 10px 20px rgb(168, 16, 16);
+    transform: scale(1.1);
+  }
+
+  .products .card img{
+    height: 200px;
+    width: 90%;
+    padding: 10px;
+    justify-self: center;
+  }
+
+  .products .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+  }
+
+  .products .card .title{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424114;
+    padding: 0 20px;
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px; 
+}
+
+
+  .container {
+    width: 400px;
+    margin-left: 850px;
+    padding: 20px;
+    text-align: justify;
+    margin-top: 200px;
+  }
+  
+  .content {
+    color: rgb(168, 16, 16)
+  }
+  
+  .content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    color: black;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  
+  .content button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+    align-items: center;
+  }
+  
+  .content button:hover {
+    background-color: rgb(111, 20, 20);
+  }
+
+
+  .cart_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px; /* Maximum width */
+    max-height: 80vh; /* 80% of viewport height */
+    overflow:hidden;
+    margin: 0 auto;
+}
+
+.img_holder {
+    flex: 1;
+    max-width: 50%;
+
+}
+
+.img_holder img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product_display {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.product_display h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product_display p {
+    margin-bottom: 10px;
+}
+
+.quantity {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.qty {
+  display: inline-flex;
+  align-items: center;
+}
+
+.qty-btn {
+  padding: 5px 10px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+#quantity {
+  width: 50px;
+  text-align: left;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.label {
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn_addtocart {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn_addtocart:hover {
+    background-color: #45a049;
+}
+
+#close_toggle {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.2em;
+  color: #aaa;
+}
+
+#close_toggle:hover {
+  color: red;
+}
